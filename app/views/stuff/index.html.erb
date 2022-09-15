@@ -1,0 +1,9 @@
+<h1>Hello! Here are your stuff</h1>
+
+<ul>
+  <% @notes.each do |note| %>
+    <li>
+      <%= link_to note.title, note %>
+    </li>
+  <% end %>
+</ul>
